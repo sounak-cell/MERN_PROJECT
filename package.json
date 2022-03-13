@@ -1,10 +1,14 @@
 {
   "name": "mern_project",
   "version": "1.0.0",
+  
   "description": "My first MERN project",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon Backend/Server.js"
+    "start": "node Backend/Server.js",
+    "server":"nodemon Backend/Server.js",
+    "client":"npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client \""
   },
   "author": "Sounak Sana",
   "license": "ISC",
